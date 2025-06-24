@@ -288,6 +288,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sensors
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -299,6 +312,88 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-depth-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Depth Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-imu-inertial-measurement-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. IMU (Inertial Measurement Unit)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-temperature-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Temperature Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sonar-acoustic-sensor-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Sonar / Acoustic Sensor (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-battery-voltage-and-current-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Battery Voltage and Current Sensors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-additional-sensors-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Additional Sensors (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -489,6 +584,77 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-depth-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Depth Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-imu-inertial-measurement-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. IMU (Inertial Measurement Unit)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-temperature-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Temperature Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sonar-acoustic-sensor-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Sonar / Acoustic Sensor (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-battery-voltage-and-current-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Battery Voltage and Current Sensors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-additional-sensors-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Additional Sensors (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Notes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -504,43 +670,179 @@
 
 
 <h1 id="sensors-requirements">Sensors Requirements</h1>
+<h2 id="1-depth-sensor">1. Depth Sensor</h2>
 <table>
 <thead>
 <tr>
-<th>Sensor Type</th>
-<th>Model</th>
-<th>Purpose</th>
-<th>Interface</th>
+<th>Parameter</th>
+<th>Specification</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>IMU</td>
-<td>MPU-9250</td>
-<td>Orientation &amp; motion</td>
-<td>I2C</td>
+<td>Type</td>
+<td>Pressure-based sensor</td>
 </tr>
 <tr>
-<td>Pressure Sensor</td>
-<td>MS5803-14BA</td>
-<td>Depth measurement</td>
-<td>SPI</td>
+<td>Operating Range</td>
+<td>0 to 50 meters</td>
 </tr>
 <tr>
-<td>Temperature</td>
-<td>DS18B20</td>
-<td>Water temperature</td>
-<td>1-Wire</td>
+<td>Accuracy</td>
+<td>±0.1 meters</td>
 </tr>
 <tr>
-<td>Camera</td>
-<td>Raspberry Pi Cam</td>
-<td>Vision &amp; AI input</td>
-<td>CSI (via AI module)</td>
+<td>Interface</td>
+<td>I2C or SPI</td>
+</tr>
+<tr>
+<td>Update Rate</td>
+<td>≥ 10 Hz</td>
 </tr>
 </tbody>
 </table>
-<p>All sensors are waterproofed and calibrated for underwater use.</p>
+<h2 id="2-imu-inertial-measurement-unit">2. IMU (Inertial Measurement Unit)</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Components</td>
+<td>3-axis accel, gyro, magnetometer</td>
+</tr>
+<tr>
+<td>Acceleration Range</td>
+<td>±16g</td>
+</tr>
+<tr>
+<td>Gyroscope Range</td>
+<td>±2000 dps</td>
+</tr>
+<tr>
+<td>Gyro Drift</td>
+<td>&lt; 0.1°/s</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>SPI or I2C</td>
+</tr>
+<tr>
+<td>Update Rate</td>
+<td>≥ 100 Hz</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-temperature-sensor">3. Temperature Sensor</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td>-10°C to 60°C</td>
+</tr>
+<tr>
+<td>Accuracy</td>
+<td>±0.5°C</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Analog or I2C</td>
+</tr>
+<tr>
+<td>Placement</td>
+<td>Inside and outside hull</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-sonar-acoustic-sensor-optional">4. Sonar / Acoustic Sensor (Optional)</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purpose</td>
+<td>Obstacle detection/ranging</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Up to 20 meters</td>
+</tr>
+<tr>
+<td>Accuracy</td>
+<td>±0.1 meters</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>UART or SPI</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-battery-voltage-and-current-sensors">5. Battery Voltage and Current Sensors</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voltage Range</td>
+<td>0 to 16V</td>
+</tr>
+<tr>
+<td>Current Range</td>
+<td>0 to 10A</td>
+</tr>
+<tr>
+<td>Accuracy</td>
+<td>±1%</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Analog or digital</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-additional-sensors-optional">6. Additional Sensors (Optional)</h2>
+<table>
+<thead>
+<tr>
+<th>Sensor Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressure Sensor</td>
+<td>Internal pressure monitoring</td>
+</tr>
+<tr>
+<td>Humidity Sensor</td>
+<td>Detect leaks/condensation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="integration-notes">Integration Notes</h2>
+<ul>
+<li>All sensors must support STM32H7 interfaces (SPI, I2C, UART, Analog).</li>
+<li>Data must be timestamped and logged.</li>
+<li>Calibration procedures must be documented.</li>
+</ul>
 
 
 
