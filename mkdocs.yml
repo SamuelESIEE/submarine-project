@@ -1,0 +1,9 @@
+site_name: Autonomous Submarine
+theme:
+  name: material
+nav:
+  - Home: README.md
+  - Requirements:
+      - System: requirements/system.md
+  - Documentation:
+      - Block Diagrams: docs/block_diagrams.md
