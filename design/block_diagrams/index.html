@@ -8,11 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://samuelesiee.github.io/submarine-project/requirements/system/">
+        <link rel="canonical" href="https://samuelesiee.github.io/submarine-project/design/block_diagrams/">
       
       
-      
-        <link rel="next" href="../../block_diagrams/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>System - Autonomous Submarine</title>
+        <title>Block Diagrams - Autonomous Submarine</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-requirements" class="md-skip">
+        <a href="#block-diagrams" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System
+              Block Diagrams
             
           </span>
         </div>
@@ -213,20 +211,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -242,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Requirements
@@ -253,32 +249,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    System
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../requirements/system/" class="md-nav__link">
         
   
   
@@ -289,62 +263,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#power-supply" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Supply
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#processing-units" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processing Units
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#communication" class="md-nav__link">
-    <span class="md-ellipsis">
-      Communication
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environmental" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environmental
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -452,36 +370,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#power-supply" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      Power Supply
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#processing-units" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processing Units
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#communication" class="md-nav__link">
-    <span class="md-ellipsis">
-      Communication
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environmental" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environmental
+      Description
     </span>
   </a>
   
@@ -503,26 +394,15 @@
 
 
 
-<h1 id="system-requirements">System Requirements</h1>
-<h2 id="power-supply">Power Supply</h2>
+<h1 id="block-diagrams">Block Diagrams</h1>
+<p>Below is the high-level system block diagram of the Autonomous Submarine:</p>
+<p><img alt="System Block Diagram" src="images/block_diagram.png" /></p>
+<h2 id="description">Description</h2>
 <ul>
-<li><strong>Battery</strong>: Li-ion 3.7V, 2000mAh</li>
-<li><strong>Voltage Regulation</strong>: LDO regulator providing a stable 3.3V supply for all MCUs and sensors.</li>
-</ul>
-<h2 id="processing-units">Processing Units</h2>
-<ul>
-<li><strong>Main MCU</strong>: STM32H7 for high-performance control and sensor processing.</li>
-<li><strong>Backup MCU</strong>: STM32L0 for ultra-low power monitoring and wake-up control.</li>
-</ul>
-<h2 id="communication">Communication</h2>
-<ul>
-<li>Wireless communication using 2.4 GHz transceivers.</li>
-<li>Wired interfaces: UART, SPI, I2C for sensors and peripherals.</li>
-</ul>
-<h2 id="environmental">Environmental</h2>
-<ul>
-<li>Waterproof housing rated IP68.</li>
-<li>Operating depth up to 50 meters.</li>
+<li>The STM32H7 MCU controls motor drivers, reads sensor data, and handles communication.</li>
+<li>The STM32L0 backup MCU monitors battery and pressure sensors to wake the system from sleep.</li>
+<li>AI module (Raspberry Pi or K210) processes vision data for obstacle avoidance.</li>
+<li>Wireless module manages communication with surface station.</li>
 </ul>
 
 
