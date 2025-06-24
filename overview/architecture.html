@@ -9,20 +9,22 @@
       
       
       
-        <link rel="prev" href="../../design/interfaces/">
+        <link rel="prev" href="../index.html">
       
       
+        <link rel="next" href="introduction.html">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>STM32H7 Code - Autonomous Submarine</title>
+        <title>Architecture - Autonomous Submarine</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -41,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#firmware-for-stm32h7" class="md-skip">
+        <a href="#system-architecture-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Autonomous Submarine" class="md-header__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
+    <a href="../index.html" title="Autonomous Submarine" class="md-header__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              STM32H7 Code
+              Architecture
             
           </span>
         </div>
@@ -174,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Autonomous Submarine" class="md-nav__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
+    <a href="../index.html" title="Autonomous Submarine" class="md-nav__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -192,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.md" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -211,18 +213,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -238,7 +242,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Overview
@@ -249,20 +253,116 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../overview/introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="architecture.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Project Introduction
+    Architecture
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Core Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔋 Power Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛰 Communication Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗺 Navigation Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-vision-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      📷 Sensor &amp; Vision Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼 Diagrams
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -275,12 +375,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/architecture/" class="md-nav__link">
+      <a href="introduction.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Architecture Summary
+    Introduction
     
   </span>
   
@@ -343,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../requirements/system/" class="md-nav__link">
+      <a href="../requirements/system.html" class="md-nav__link">
         
   
   
@@ -366,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../requirements/sensors/" class="md-nav__link">
+      <a href="../requirements/sensors.html" class="md-nav__link">
         
   
   
@@ -389,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../requirements/power.md" class="md-nav__link">
+      <a href="../requirements/power.html" class="md-nav__link">
         
   
   
@@ -412,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../requirements/communication.md" class="md-nav__link">
+      <a href="../requirements/communication.html" class="md-nav__link">
         
   
   
@@ -480,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/block_diagrams/" class="md-nav__link">
+      <a href="../design/block_diagrams.html" class="md-nav__link">
         
   
   
@@ -503,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/interfaces/" class="md-nav__link">
+      <a href="../design/interfaces.html" class="md-nav__link">
         
   
   
@@ -526,12 +626,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/pcb.md" class="md-nav__link">
+      <a href="../design/pcb.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    PCB Overview
+    PCB
     
   </span>
   
@@ -553,20 +653,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -582,7 +680,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Firmware
@@ -593,89 +691,20 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    STM32H7 Code
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../firmware/stm32h7.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    STM32H7 Code
+    STM32H7
     
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      Architecture
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-snippet-reading-imu-via-i2c" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Snippet: Reading IMU via I2C
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -688,12 +717,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../backup_mcu.md" class="md-nav__link">
+      <a href="../firmware/backup_mcu.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Power MCU
+    Backup MCU
     
   </span>
   
@@ -756,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/test_plans.md" class="md-nav__link">
+      <a href="../testing/test_plans.html" class="md-nav__link">
         
   
   
@@ -779,7 +808,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/results.md" class="md-nav__link">
+      <a href="../testing/tests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tests
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing/results.html" class="md-nav__link">
         
   
   
@@ -829,27 +881,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#core-architecture" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      🧠 Core Architecture
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Architecture
+      🔋 Power Management
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-snippet-reading-imu-via-i2c" class="md-nav__link">
+  <a href="#communication-layers" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Snippet: Reading IMU via I2C
+      🛰 Communication Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗺 Navigation Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-vision-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      📷 Sensor &amp; Vision Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖼 Diagrams
     </span>
   </a>
   
@@ -871,24 +950,69 @@
 
 
 
-<h1 id="firmware-for-stm32h7">Firmware for STM32H7</h1>
-<h2 id="overview">Overview</h2>
-<p>The STM32H7 firmware is responsible for:</p>
+<h1 id="system-architecture-overview">System Architecture Overview</h1>
+<p>This page presents the high-level architecture of the autonomous submarine project. It shows how the main subsystems interact to enable intelligent underwater navigation and data acquisition.</p>
+<hr />
+<h2 id="core-architecture">🧠 Core Architecture</h2>
 <ul>
-<li>Sensor data acquisition and filtering</li>
-<li>Motor control (PWM outputs)</li>
-<li>Communication with AI coprocessor and wireless module</li>
-<li>Data logging on microSD card</li>
+<li><strong>Main MCU (STM32H7)</strong> handles:</li>
+<li>Motor control</li>
+<li>Sensor data processing</li>
+<li>AI coordination</li>
+<li>
+<p>Communication with external devices</p>
+</li>
+<li>
+<p><strong>Low-Power MCU (STM32L0 / ATtiny)</strong> manages:</p>
+</li>
+<li>Wake-up logic</li>
+<li>Pressure monitoring</li>
+<li>
+<p>Emergency power systems</p>
+</li>
+<li>
+<p><strong>AI Coprocessor (K210 or Raspberry Pi Zero 2 W)</strong> is used for:</p>
+</li>
+<li>Image processing</li>
+<li>Navigation assistance</li>
+<li>Model inference</li>
 </ul>
-<h2 id="architecture">Architecture</h2>
+<hr />
+<h2 id="power-management">🔋 Power Management</h2>
 <ul>
-<li><strong>Main Loop</strong>: Periodically reads sensors and updates motor commands.</li>
-<li><strong>Interrupts</strong>: Handle UART, SPI data reception.</li>
-<li><strong>Power Management</strong>: Coordinates with STM32L0 for low-power modes.</li>
+<li>Main battery powers propulsion, AI, and navigation.</li>
+<li>Supercapacitor or piezo module acts as backup.</li>
+<li>Intelligent regulation switches between sources.</li>
 </ul>
-<h2 id="code-snippet-reading-imu-via-i2c">Code Snippet: Reading IMU via I2C</h2>
-<p>```c
-HAL_I2C_Mem_Read(&amp;hi2c1, MPU9250_ADDRESS, MPU9250_ACCEL_XOUT_H, I2C_MEMADD_SIZE_8BIT, buffer, 6, 100);</p>
+<hr />
+<h2 id="communication-layers">🛰 Communication Layers</h2>
+<ul>
+<li><strong>Internal Bus (I2C / SPI / UART)</strong> links sensors and controllers.</li>
+<li><strong>External Interfaces</strong> include:</li>
+<li>USB</li>
+<li>BLE or LoRa (optional for future telemetry)</li>
+</ul>
+<hr />
+<h2 id="navigation-flow">🗺 Navigation Flow</h2>
+<ol>
+<li>Receive mission instruction</li>
+<li>Initialize system state</li>
+<li>Perform dead-reckoning with internal sensors</li>
+<li>Use AI for visual correction</li>
+<li>Log all data to microSD</li>
+</ol>
+<hr />
+<h2 id="sensor-vision-stack">📷 Sensor &amp; Vision Stack</h2>
+<ul>
+<li>360° Camera</li>
+<li>Front-Facing Camera</li>
+<li>Pressure, IMU, Temp sensors</li>
+</ul>
+<hr />
+<h2 id="diagrams">🖼 Diagrams</h2>
+<p><em>You can insert diagrams here:</em></p>
+<p>```markdown
+![System Overview Diagram]</p>
 
 
 
@@ -937,10 +1061,10 @@ HAL_I2C_Mem_Read(&amp;hi2c1, MPU9250_ADDRESS, MPU9250_ACCEL_XOUT_H, I2C_MEMADD_S
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
