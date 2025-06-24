@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../block_diagrams/">
+        <link rel="prev" href="../../testing/tests/">
       
-      
-        <link rel="next" href="../../firmware/stm32h7/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Interfaces - Autonomous Submarine</title>
+        <title>Overview - Autonomous Submarine</title>
       
     
     
@@ -61,11 +59,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#communication-interfaces" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interfaces
+              Overview
             
           </span>
         </div>
@@ -304,20 +297,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -333,7 +324,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Design
@@ -347,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../block_diagrams/" class="md-nav__link">
+      <a href="../../design/block_diagrams/" class="md-nav__link">
         
   
   
@@ -367,19 +358,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../design/interfaces/" class="md-nav__link">
         
   
   
@@ -390,7 +372,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -451,10 +432,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../overview/introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -465,6 +453,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -486,8 +475,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -503,39 +490,9 @@
 
 
 
-<h1 id="communication-interfaces">Communication Interfaces</h1>
-<table>
-<thead>
-<tr>
-<th>Interface</th>
-<th>Usage</th>
-<th>Protocol Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UART</td>
-<td>Debugging and data logging</td>
-<td>115200 baud, 8N1</td>
-</tr>
-<tr>
-<td>SPI</td>
-<td>Pressure sensor communication</td>
-<td>Mode 0, 1 MHz</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>IMU sensor and EEPROM</td>
-<td>Standard mode 100 kHz</td>
-</tr>
-<tr>
-<td>Wireless</td>
-<td>Telemetry and remote commands</td>
-<td>2.4 GHz proprietary protocol</td>
-</tr>
-</tbody>
-</table>
-<p>All interfaces use level shifting to protect the MCU inputs from voltage mismatches.</p>
+  <h1>Overview</h1>
+
+
 
 
 
