@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../firmware/backup_mcu.html">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="tests.html">
+        <link rel="next" href="../../requirements/system/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Test Plans - Autonomous Submarine</title>
+        <title>Introduction - Autonomous Submarine</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#autonomous-submarine-project-overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="Autonomous Submarine" class="md-header__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
+    <a href="../.." title="Autonomous Submarine" class="md-header__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Test Plans
+              Introduction
             
           </span>
         </div>
@@ -171,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Autonomous Submarine" class="md-nav__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
+    <a href="../.." title="Autonomous Submarine" class="md-nav__button md-logo" aria-label="Autonomous Submarine" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -208,18 +213,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -235,7 +242,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Overview
@@ -249,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/architecture.html" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -269,10 +276,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../overview/introduction.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -283,6 +312,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -340,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../requirements/system.html" class="md-nav__link">
+      <a href="../../requirements/system/" class="md-nav__link">
         
   
   
@@ -363,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../requirements/sensors.html" class="md-nav__link">
+      <a href="../../requirements/sensors/" class="md-nav__link">
         
   
   
@@ -386,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../requirements/power.html" class="md-nav__link">
+      <a href="../../requirements/power/" class="md-nav__link">
         
   
   
@@ -409,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../requirements/communication.html" class="md-nav__link">
+      <a href="../../requirements/communication/" class="md-nav__link">
         
   
   
@@ -477,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/block_diagrams.html" class="md-nav__link">
+      <a href="../../design/block_diagrams/" class="md-nav__link">
         
   
   
@@ -500,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/interfaces.html" class="md-nav__link">
+      <a href="../../design/interfaces/" class="md-nav__link">
         
   
   
@@ -523,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/pcb.html" class="md-nav__link">
+      <a href="../../design/pcb/" class="md-nav__link">
         
   
   
@@ -591,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../firmware/stm32h7.html" class="md-nav__link">
+      <a href="../../firmware/stm32h7/" class="md-nav__link">
         
   
   
@@ -614,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../firmware/backup_mcu.html" class="md-nav__link">
+      <a href="../../firmware/backup_mcu/" class="md-nav__link">
         
   
   
@@ -641,20 +717,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -670,7 +744,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Testing
@@ -681,17 +755,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="test_plans.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../testing/test_plans/" class="md-nav__link">
         
   
   
@@ -702,7 +769,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -715,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tests.html" class="md-nav__link">
+      <a href="../../testing/tests/" class="md-nav__link">
         
   
   
@@ -738,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="results.html" class="md-nav__link">
+      <a href="../../testing/results/" class="md-nav__link">
         
   
   
@@ -778,6 +844,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -793,9 +896,33 @@
 
 
 
-  <h1>Test Plans</h1>
-
-
+<h1 id="autonomous-submarine-project-overview">Autonomous Submarine Project Overview</h1>
+<p>Welcome to the Autonomous Submarine documentation! This project focuses on designing, building, and testing an autonomous underwater vehicle with advanced navigation, sensing, and control capabilities.</p>
+<h2 id="project-goals">Project Goals</h2>
+<ul>
+<li>Develop a reliable and robust submarine platform capable of autonomous underwater navigation.</li>
+<li>Integrate various sensors to monitor environmental conditions and system status.</li>
+<li>Implement firmware to control motors, sensors, and communication systems.</li>
+<li>Validate system performance through rigorous testing.</li>
+</ul>
+<h2 id="documentation-structure">Documentation Structure</h2>
+<p>To help you navigate this project, here is an overview of the main documentation sections:</p>
+<ul>
+<li><a href="../../requirements/system/">Requirements</a>: Detailed hardware and software requirements, including sensors and system constraints.</li>
+<li><a href="../../design/block_diagrams/">Design</a>: System architecture, block diagrams, and hardware interface designs.</li>
+<li><a href="../../firmware/stm32h7/">Firmware</a>: Embedded software running on the STM32H7 microcontroller.</li>
+<li><a href="../../testing/tests/">Testing</a>: Test plans, results, and analysis.</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li>Start by reviewing the <a href="../../requirements/system/">Requirements</a> to understand the scope and constraints.</li>
+<li>Dive into the <a href="../../design/block_diagrams/">Design</a> section to see how the system is architected.</li>
+<li>Explore the <a href="../../firmware/stm32h7/">Firmware</a> documentation to learn about the software implementation.</li>
+<li>Finally, review the <a href="../../testing/tests/">Testing</a> results to understand system reliability.</li>
+</ul>
+<hr />
+<p>If you have questions or want to contribute, please refer to the repository README or contact the project maintainer.</p>
+<hr />
 
 
 
@@ -844,10 +971,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
