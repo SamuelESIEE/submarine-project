@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sensors-requirements" class="md-skip">
+        <a href="#sensors-requirements-autonomous-submarine" class="md-skip">
           Skip to content
         </a>
       
@@ -443,54 +443,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-depth-sensor" class="md-nav__link">
+  <a href="#1-depth-sensor-s-01" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Depth Sensor
+      1. Depth Sensor (S-01)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-imu-inertial-measurement-unit" class="md-nav__link">
+  <a href="#2-imu-inertial-measurement-unit-s-02" class="md-nav__link">
     <span class="md-ellipsis">
-      2. IMU (Inertial Measurement Unit)
+      2. IMU (Inertial Measurement Unit) (S-02)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-temperature-sensor" class="md-nav__link">
+  <a href="#3-temperature-sensor-s-03" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Temperature Sensor
+      3. Temperature Sensor (S-03)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-sonar-acoustic-sensor-optional" class="md-nav__link">
+  <a href="#4-battery-voltage-and-current-sensors-s-04" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Sonar / Acoustic Sensor (Optional)
+      4. Battery Voltage and Current Sensors (S-04)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-battery-voltage-and-current-sensors" class="md-nav__link">
+  <a href="#5-additional-sensors-optional-s-05" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Battery Voltage and Current Sensors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-additional-sensors-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Additional Sensors (Optional)
+      5. Additional Sensors (Optional) (S-05)
     </span>
   </a>
   
@@ -890,54 +881,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-depth-sensor" class="md-nav__link">
+  <a href="#1-depth-sensor-s-01" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Depth Sensor
+      1. Depth Sensor (S-01)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-imu-inertial-measurement-unit" class="md-nav__link">
+  <a href="#2-imu-inertial-measurement-unit-s-02" class="md-nav__link">
     <span class="md-ellipsis">
-      2. IMU (Inertial Measurement Unit)
+      2. IMU (Inertial Measurement Unit) (S-02)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-temperature-sensor" class="md-nav__link">
+  <a href="#3-temperature-sensor-s-03" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Temperature Sensor
+      3. Temperature Sensor (S-03)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-sonar-acoustic-sensor-optional" class="md-nav__link">
+  <a href="#4-battery-voltage-and-current-sensors-s-04" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Sonar / Acoustic Sensor (Optional)
+      4. Battery Voltage and Current Sensors (S-04)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-battery-voltage-and-current-sensors" class="md-nav__link">
+  <a href="#5-additional-sensors-optional-s-05" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Battery Voltage and Current Sensors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-additional-sensors-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Additional Sensors (Optional)
+      5. Additional Sensors (Optional) (S-05)
     </span>
   </a>
   
@@ -968,8 +950,9 @@
 
 
 
-<h1 id="sensors-requirements">Sensors Requirements</h1>
-<h2 id="1-depth-sensor">1. Depth Sensor</h2>
+<hr />
+<h1 id="sensors-requirements-autonomous-submarine">Sensors Requirements — Autonomous Submarine</h1>
+<h2 id="1-depth-sensor-s-01">1. Depth Sensor (S-01)</h2>
 <table>
 <thead>
 <tr>
@@ -984,7 +967,7 @@
 </tr>
 <tr>
 <td>Operating Range</td>
-<td>0 to 50 meters</td>
+<td>0 to 25 meters</td>
 </tr>
 <tr>
 <td>Accuracy</td>
@@ -994,13 +977,10 @@
 <td>Interface</td>
 <td>I2C or SPI</td>
 </tr>
-<tr>
-<td>Update Rate</td>
-<td>≥ 10 Hz</td>
-</tr>
 </tbody>
 </table>
-<h2 id="2-imu-inertial-measurement-unit">2. IMU (Inertial Measurement Unit)</h2>
+<hr />
+<h2 id="2-imu-inertial-measurement-unit-s-02">2. IMU (Inertial Measurement Unit) (S-02)</h2>
 <table>
 <thead>
 <tr>
@@ -1011,7 +991,7 @@
 <tbody>
 <tr>
 <td>Components</td>
-<td>3-axis accel, gyro, magnetometer</td>
+<td>3-axis accelerometer, gyroscope, magnetometer</td>
 </tr>
 <tr>
 <td>Acceleration Range</td>
@@ -1035,7 +1015,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="3-temperature-sensor">3. Temperature Sensor</h2>
+<hr />
+<h2 id="3-temperature-sensor-s-03">3. Temperature Sensor (S-03)</h2>
 <table>
 <thead>
 <tr>
@@ -1062,34 +1043,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="4-sonar-acoustic-sensor-optional">4. Sonar / Acoustic Sensor (Optional)</h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Specification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Purpose</td>
-<td>Obstacle detection/ranging</td>
-</tr>
-<tr>
-<td>Range</td>
-<td>Up to 20 meters</td>
-</tr>
-<tr>
-<td>Accuracy</td>
-<td>±0.1 meters</td>
-</tr>
-<tr>
-<td>Interface</td>
-<td>UART or SPI</td>
-</tr>
-</tbody>
-</table>
-<h2 id="5-battery-voltage-and-current-sensors">5. Battery Voltage and Current Sensors</h2>
+<hr />
+<h2 id="4-battery-voltage-and-current-sensors-s-04">4. Battery Voltage and Current Sensors (S-04)</h2>
 <table>
 <thead>
 <tr>
@@ -1100,11 +1055,11 @@
 <tbody>
 <tr>
 <td>Voltage Range</td>
-<td>0 to 16V</td>
+<td>0 to 16 V</td>
 </tr>
 <tr>
 <td>Current Range</td>
-<td>0 to 10A</td>
+<td>0 to 10 A</td>
 </tr>
 <tr>
 <td>Accuracy</td>
@@ -1116,7 +1071,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="6-additional-sensors-optional">6. Additional Sensors (Optional)</h2>
+<hr />
+<h2 id="5-additional-sensors-optional-s-05">5. Additional Sensors (Optional) (S-05)</h2>
 <table>
 <thead>
 <tr>
@@ -1131,17 +1087,19 @@
 </tr>
 <tr>
 <td>Humidity Sensor</td>
-<td>Detect leaks/condensation</td>
+<td>Detect leaks / condensation</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="integration-notes">Integration Notes</h2>
 <ul>
-<li>All sensors must support STM32H7 interfaces (SPI, I2C, UART, Analog).</li>
-<li>Data must be timestamped and logged.</li>
-<li>Calibration procedures must be documented.</li>
+<li>All sensors must be compatible with STM32H7 interfaces (SPI, I2C, UART, Analog).</li>
+<li>Sensor data must be timestamped and logged consistently.</li>
+<li>Calibration procedures must be documented and repeatable.</li>
+<li>Drivers and software modules must implement error handling and recovery.</li>
 </ul>
+<hr />
 
 
 

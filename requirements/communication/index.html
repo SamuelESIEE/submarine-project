@@ -795,7 +795,68 @@
 
   <h1>Communication</h1>
 
-
+<p>This document outlines the communication protocols and interfaces required for the submarine’s internal and external data exchange.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COM-01</td>
+<td>Internal Communication Bus</td>
+<td>Use I2C, SPI, or UART buses to connect sensors, controllers, and subsystems.</td>
+</tr>
+<tr>
+<td>COM-02</td>
+<td>Protocol Standardization</td>
+<td>All internal devices must adhere to documented protocols for reliable communication.</td>
+</tr>
+<tr>
+<td>COM-03</td>
+<td>External Interfaces</td>
+<td>Provide USB for data download and configuration.</td>
+</tr>
+<tr>
+<td>COM-04</td>
+<td>Wireless Telemetry (Optional)</td>
+<td>Future support for BLE or LoRa communication to transmit data when surfaced.</td>
+</tr>
+<tr>
+<td>COM-05</td>
+<td>Data Rate</td>
+<td>Internal bus must support minimum 1 Hz sensor data updates, configurable up to 10 Hz.</td>
+</tr>
+<tr>
+<td>COM-06</td>
+<td>Error Detection and Correction</td>
+<td>Communication protocols should include error checking (CRC, checksums) and retransmission.</td>
+</tr>
+<tr>
+<td>COM-07</td>
+<td>Interface Isolation</td>
+<td>Electrical isolation may be required for certain interfaces to protect against noise or faults.</td>
+</tr>
+<tr>
+<td>COM-08</td>
+<td>Firmware Update Support</td>
+<td>Communication interfaces must support firmware updates via USB or SD card.</td>
+</tr>
+<tr>
+<td>COM-09</td>
+<td>Low Latency</td>
+<td>Data packets for critical commands or status must be transmitted with minimal delay (&lt; 5s).</td>
+</tr>
+<tr>
+<td>COM-10</td>
+<td>Security</td>
+<td>External communication must include authentication or encryption to prevent unauthorized access.</td>
+</tr>
+</tbody>
+</table>
 
 
 
