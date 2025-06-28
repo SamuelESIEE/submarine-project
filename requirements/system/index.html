@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../overview/introduction/">
+        <link rel="prev" href="../../overview/architecture/">
       
       
-        <link rel="next" href="../sensors/">
+        <link rel="next" href="../power/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -254,12 +254,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/architecture/" class="md-nav__link">
+      <a href="../../overview/introduction/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Architecture
+    Introduction
     
   </span>
   
@@ -277,12 +277,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/introduction/" class="md-nav__link">
+      <a href="../../overview/architecture/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Introduction
+    Architecture
     
   </span>
   
@@ -475,12 +475,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../sensors/" class="md-nav__link">
+      <a href="../power/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Sensors
+    Power
     
   </span>
   
@@ -498,12 +498,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../power/" class="md-nav__link">
+      <a href="../sensors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Power
+    Sensors
     
   </span>
   
@@ -1001,11 +1001,6 @@
 <td>All sensor and status data must be logged locally (e.g., on a microSD card).</td>
 </tr>
 <tr>
-<td>F-04</td>
-<td>Data Transmission</td>
-<td>The system must be able to transmit data (via RF/LoRa or Wi-Fi) when surfaced.</td>
-</tr>
-<tr>
 <td>F-05</td>
 <td>Emergency Surface Mode</td>
 <td>The submarine must surface autonomously in case of critical failure or low battery.</td>
@@ -1014,6 +1009,11 @@
 <td>F-06</td>
 <td>Mission Scripting</td>
 <td>Predefined mission plans should be uploadable before deployment.</td>
+</tr>
+<tr>
+<td>F-07</td>
+<td>Dead recknoining nagivation</td>
+<td>based on mission predened before deplment, submarine should be able to nagivative with GPS..</td>
 </tr>
 </tbody>
 </table>
@@ -1051,7 +1051,7 @@
 <tr>
 <td>P-05</td>
 <td>Transmission Latency</td>
-<td>When surfaced, send data packets within 5 seconds.</td>
+<td>When surfaced, send data packets within 5 seconds in normal mode.</td>
 </tr>
 </tbody>
 </table>
@@ -1069,7 +1069,7 @@
 <tr>
 <td>E-01</td>
 <td>Operating Depth</td>
-<td>Maximum safe depth: 5 meters (test limit).</td>
+<td>Maximum safe depth: 15 meters (test limit).</td>
 </tr>
 <tr>
 <td>E-02</td>
@@ -1080,11 +1080,6 @@
 <td>E-03</td>
 <td>Waterproofing Standard</td>
 <td>Enclosure must comply with at least IP68 or equivalent.</td>
-</tr>
-<tr>
-<td>E-04</td>
-<td>Saltwater Compatibility</td>
-<td>Components must be resistant to corrosion (use marine-grade materials).</td>
 </tr>
 </tbody>
 </table>
@@ -1107,12 +1102,7 @@
 <tr>
 <td>H-02</td>
 <td>Backup Controller</td>
-<td>STM32L0/ATTiny for low-power monitoring (e.g., pressure, wake-up logic).</td>
-</tr>
-<tr>
-<td>H-03</td>
-<td>AI Module</td>
-<td>Raspberry Pi Zero 2 W or Kendryte K210 for onboard image processing.</td>
+<td><a href="../requirements/">STM32L0/ATTiny</a> for low-power monitoring (e.g., pressure, wake-up logic, leak inside water prof parts.).</td>
 </tr>
 <tr>
 <td>H-04</td>
