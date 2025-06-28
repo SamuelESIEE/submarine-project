@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../introduction/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../../requirements/system/">
+        <link rel="next" href="../introduction/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -253,29 +253,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -329,19 +306,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-system-overview" class="md-nav__link">
+  <a href="#core-system-components" class="md-nav__link">
     <span class="md-ellipsis">
-      1. System Overview
+      Core System Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. System Overview">
+    <nav class="md-nav" aria-label="Core System Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#high-level-system-block-diagram" class="md-nav__link">
+  <a href="#main-controller-stm32h7" class="md-nav__link">
     <span class="md-ellipsis">
-      High-Level System Block Diagram
+      Main Controller (STM32H7)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-controller-stm32l0-attiny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Controller (STM32L0 / ATtiny)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensors-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensors Subsystem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-management-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Management Subsystem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Subsystem
     </span>
   </a>
   
@@ -353,87 +366,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-subsystems" class="md-nav__link">
+  <a href="#subsystem-interaction-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Subsystems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Subsystems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-core-processing-unit" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Core Processing Unit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-power-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Power Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-sensors" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 Sensors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-communication" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Communication
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-actuators-mobility" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 Actuators &amp; Mobility
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-data-flow-control-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Data Flow &amp; Control Flow
+      Subsystem Interaction Diagram
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-safety-fault-tolerance" class="md-nav__link">
+  <a href="#navigation-flow-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Safety &amp; Fault Tolerance
+      Navigation Flow Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-documentation" class="md-nav__link">
+  <a href="#links-to-subsystem-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Related Documentation
+      Links to Subsystem Details
     </span>
   </a>
   
@@ -443,6 +396,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -523,12 +499,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../requirements/power/" class="md-nav__link">
+      <a href="../../requirements/sensors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Power
+    Sensors
     
   </span>
   
@@ -546,12 +522,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../requirements/sensors/" class="md-nav__link">
+      <a href="../../requirements/power/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Sensors
+    Power
     
   </span>
   
@@ -637,12 +613,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/block_diagrams/" class="md-nav__link">
+      <a href="../../design/main_controller/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Block Diagrams
+    Main Controller
     
   </span>
   
@@ -660,12 +636,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/interfaces/" class="md-nav__link">
+      <a href="../../design/backup_controller/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Interfaces
+    Backup Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/power_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication
     
   </span>
   
@@ -938,19 +960,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-system-overview" class="md-nav__link">
+  <a href="#core-system-components" class="md-nav__link">
     <span class="md-ellipsis">
-      1. System Overview
+      Core System Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. System Overview">
+    <nav class="md-nav" aria-label="Core System Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#high-level-system-block-diagram" class="md-nav__link">
+  <a href="#main-controller-stm32h7" class="md-nav__link">
     <span class="md-ellipsis">
-      High-Level System Block Diagram
+      Main Controller (STM32H7)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-controller-stm32l0-attiny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Controller (STM32L0 / ATtiny)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensors-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensors Subsystem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-management-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Management Subsystem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Subsystem
     </span>
   </a>
   
@@ -962,87 +1020,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-subsystems" class="md-nav__link">
+  <a href="#subsystem-interaction-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Subsystems
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Subsystems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-core-processing-unit" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Core Processing Unit
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-power-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Power Management
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-sensors" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 Sensors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-communication" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Communication
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-actuators-mobility" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 Actuators &amp; Mobility
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-data-flow-control-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Data Flow &amp; Control Flow
+      Subsystem Interaction Diagram
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-safety-fault-tolerance" class="md-nav__link">
+  <a href="#navigation-flow-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Safety &amp; Fault Tolerance
+      Navigation Flow Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-documentation" class="md-nav__link">
+  <a href="#links-to-subsystem-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Related Documentation
+      Links to Subsystem Details
     </span>
   </a>
   
@@ -1065,71 +1063,57 @@
 
 
 <h1 id="system-architecture-overview">System Architecture Overview</h1>
-<p>This page provides a high-level view of the Autonomous Submarine system architecture, breaking down its main subsystems, their roles, and interfaces.</p>
+<p>This page provides a high-level description of the Autonomous Submarine's architecture, illustrating the main subsystems and their interactions enabling intelligent underwater navigation and data acquisition.</p>
 <hr />
-<h2 id="1-system-overview">1. System Overview</h2>
-<p>The autonomous submarine integrates multiple subsystems to achieve reliable underwater navigation, sensing, communication, and power management. The architecture is designed for modularity, scalability, and fault tolerance.</p>
-<h3 id="high-level-system-block-diagram">High-Level System Block Diagram</h3>
-<p><img alt="System Block Diagram" src="images/system_block_diagram.png" /></p>
-<hr />
-<h2 id="2-subsystems">2. Subsystems</h2>
-<h3 id="21-core-processing-unit">2.1 Core Processing Unit</h3>
-<p>Handles navigation, sensor fusion, motor control, communication, and system management.<br />
-- <strong>Main MCU:</strong> STM32H7 (high-performance ARM Cortex-M7)<br />
-- <strong>Backup MCU:</strong> STM32L0 or ATTiny for low-power monitoring and wake-up functions</p>
-<p><a href="../../firmware/stm32h7/">Detailed MCU Firmware Design →</a></p>
-<hr />
-<h3 id="22-power-management">2.2 Power Management</h3>
-<p>Manages power sources, battery monitoring, and backup power to ensure continuous operation and safe shutdown.<br />
-- Battery pack with voltage/current monitoring<br />
-- Piezoelectric backup energy harvester and supercapacitor<br />
-- Power regulation and switching circuits</p>
-<p><a href="../design/power_management.md">Detailed Power System Design →</a></p>
-<hr />
-<h3 id="23-sensors">2.3 Sensors</h3>
-<p>Provide environmental and navigation data, including:<br />
-- Depth sensor (pressure-based)<br />
-- Inertial Measurement Unit (IMU)<br />
-- Temperature sensors<br />
-- Battery voltage and current sensors</p>
-<p><a href="../../requirements/sensors/">Detailed Sensor System →</a></p>
-<hr />
-<h3 id="24-communication">2.4 Communication</h3>
-<p>Handles data exchange with the surface and internal subsystems:<br />
-- RF communication when surfaced<br />
-- Internal buses: SPI, I2C, UART</p>
-<p><a href="../design/communication.md">Detailed Communication Architecture →</a></p>
-<hr />
-<h3 id="25-actuators-mobility">2.5 Actuators &amp; Mobility</h3>
-<p>Includes motors and motor drivers for underwater maneuvering:<br />
-- 4 to 6 brushed/brushless DC motors<br />
-- PWM speed control and safety cut-off mechanisms</p>
-<p><a href="../design/actuators.md">Detailed Actuator Design →</a></p>
-<hr />
-<h2 id="3-data-flow-control-flow">3. Data Flow &amp; Control Flow</h2>
+<h2 id="core-system-components">Core System Components</h2>
+<h3 id="main-controller-stm32h7">Main Controller (STM32H7)</h3>
 <ul>
-<li>Sensor data acquisition → MCU processing → Navigation decisions → Motor control commands  </li>
-<li>Logging sensor and status data to microSD card  </li>
-<li>Communication uplink/downlink when surfaced</li>
+<li>Coordinates motor control, sensor data processing, navigation algorithms, and communication.</li>
+<li>Runs main firmware including AI inference.</li>
+</ul>
+<h3 id="backup-controller-stm32l0-attiny">Backup Controller (STM32L0 / ATtiny)</h3>
+<ul>
+<li>Monitors system health in low-power mode.</li>
+<li>Handles wake-up events and emergency shutdown.</li>
+<li>Manages backup power sources.</li>
+</ul>
+<h3 id="sensors-subsystem">Sensors Subsystem</h3>
+<ul>
+<li>Includes pressure sensor, IMU, temperature sensors, and cameras.</li>
+<li>Provides environmental and positional data to the main controller.</li>
+</ul>
+<h3 id="power-management-subsystem">Power Management Subsystem</h3>
+<ul>
+<li>Handles battery management, voltage regulation, and backup energy harvesting (e.g., piezoelectric).</li>
+<li>Ensures reliable power delivery to all components.</li>
+</ul>
+<h3 id="communication-subsystem">Communication Subsystem</h3>
+<ul>
+<li>Manages internal buses (I2C, SPI, UART) between MCUs and sensors.</li>
+<li>Provides external interfaces such as USB and optional wireless telemetry (BLE/LoRa).</li>
 </ul>
 <hr />
-<h2 id="4-safety-fault-tolerance">4. Safety &amp; Fault Tolerance</h2>
-<ul>
-<li>Backup MCU monitors critical sensors and triggers emergency surface mode  </li>
-<li>Watchdog resets and external kill switch for fail-safe operation  </li>
-<li>Power fail detection and graceful shutdown</li>
-</ul>
+<h2 id="subsystem-interaction-diagram">Subsystem Interaction Diagram</h2>
+<p><img alt="System Block Diagram" src="../images/system_block_diagram.png" /></p>
+<p><em>Figure: Overview of main subsystems and data/control flows.</em></p>
 <hr />
-<h2 id="related-documentation">Related Documentation</h2>
+<h2 id="navigation-flow-overview">Navigation Flow Overview</h2>
+<ol>
+<li>Mission parameters uploaded via USB or wireless interface.</li>
+<li>Main MCU initializes sensors and subsystems.</li>
+<li>Sensors collect data, fused by the main MCU for dead reckoning.</li>
+<li>AI algorithms process sensor data for navigation corrections.</li>
+<li>Data logged to microSD card and transmitted if surfaced.</li>
+<li>Backup MCU monitors system status and triggers emergency surfacing if needed.</li>
+</ol>
+<hr />
+<h2 id="links-to-subsystem-details">Links to Subsystem Details</h2>
 <ul>
-<li><a href="../../requirements/system/">System Requirements</a>  </li>
-<li><a href="../../requirements/sensors/">Sensors Requirements</a>  </li>
-<li><a href="../../requirements/power/">Power Requirements</a>  </li>
-<li><a href="../../requirements/communication/">Communication Requirements</a>  </li>
-<li><a href="../../firmware/stm32h7/">Firmware Design (STM32H7)</a>  </li>
-<li><a href="../design/power_management.md">Power System Design</a>  </li>
-<li><a href="../design/communication.md">Communication Architecture</a>  </li>
-<li><a href="../design/actuators.md">Actuator Design</a></li>
+<li><a href="../../design/main_controller/">Main Controller Details</a></li>
+<li><a href="../../design/backup_controller/">Backup Controller Details</a></li>
+<li><a href="../../requirements/sensors/">Sensors Overview</a></li>
+<li><a href="../../design/power_management/">Power Management Details</a></li>
+<li><a href="../../design/communication/">Communication Interfaces</a></li>
 </ul>
 
 
