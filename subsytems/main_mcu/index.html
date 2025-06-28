@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../architecture/">
-      
-      
-        <link rel="next" href="../../requirements/system/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Introduction - Autonomous Submarine</title>
+        <title>Main mcu - Autonomous Submarine</title>
       
     
     
@@ -61,11 +57,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#autonomous-submarine-project-overview" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Main mcu
             
           </span>
         </div>
@@ -213,20 +204,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -242,7 +231,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Overview
@@ -256,7 +245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
+      <a href="../../overview/architecture/" class="md-nav__link">
         
   
   
@@ -267,98 +256,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-goals" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Goals
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -553,12 +450,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/main_controller/" class="md-nav__link">
+      <a href="../../design/block_diagrams/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Main Controller
+    Block Diagrams
     
   </span>
   
@@ -576,58 +473,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../design/backup_controller/" class="md-nav__link">
+      <a href="../../design/interfaces/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Backup Controller
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../design/power_management/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Power Management
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../design/communication/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Communication
+    Interfaces
     
   </span>
   
@@ -691,7 +542,7 @@
   
   
   <span class="md-ellipsis">
-    Firmware
+    Subsystems
     
   </span>
   
@@ -701,6 +552,166 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Subsystems
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../subsystems/main_mcu.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Main MCU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../subsystems/backup_mcu.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backup MCU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../subsystems/sensors.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sensors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../subsystems/power_management.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../subsystems/communication.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Firmware
           </label>
@@ -774,10 +785,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -790,8 +801,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Testing
           </label>
@@ -890,43 +901,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-goals" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Goals
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -942,33 +916,9 @@
 
 
 
-<h1 id="autonomous-submarine-project-overview">Autonomous Submarine Project Overview</h1>
-<p>Welcome to the Autonomous Submarine documentation! This project focuses on designing, building, and testing an autonomous underwater vehicle with advanced navigation, sensing, and control capabilities.</p>
-<h2 id="project-goals">Project Goals</h2>
-<ul>
-<li>Develop a reliable and robust submarine platform capable of autonomous underwater navigation.</li>
-<li>Integrate various sensors to monitor environmental conditions and system status.</li>
-<li>Implement firmware to control motors, sensors, and communication systems.</li>
-<li>Validate system performance through rigorous testing.</li>
-</ul>
-<h2 id="documentation-structure">Documentation Structure</h2>
-<p>To help you navigate this project, here is an overview of the main documentation sections:</p>
-<ul>
-<li><a href="../../requirements/system/">Requirements</a>: Detailed hardware and software requirements, including sensors and system constraints.</li>
-<li><a href="../../design/block_diagrams/">Design</a>: System architecture, block diagrams, and hardware interface designs.</li>
-<li><a href="../../firmware/stm32h7/">Firmware</a>: Embedded software running on the STM32H7 microcontroller.</li>
-<li><a href="../../testing/tests/">Testing</a>: Test plans, results, and analysis.</li>
-</ul>
-<h2 id="getting-started">Getting Started</h2>
-<ul>
-<li>Start by reviewing the <a href="../../requirements/system/">Requirements</a> to understand the scope and constraints.</li>
-<li>Dive into the <a href="../../design/block_diagrams/">Design</a> section to see how the system is architected.</li>
-<li>Explore the <a href="../../firmware/stm32h7/">Firmware</a> documentation to learn about the software implementation.</li>
-<li>Finally, review the <a href="../../testing/tests/">Testing</a> results to understand system reliability.</li>
-</ul>
-<hr />
-<p>If you have questions or want to contribute, please refer to the repository README or contact the project maintainer.</p>
-<hr />
+  <h1>Main mcu</h1>
+
+
 
 
 
