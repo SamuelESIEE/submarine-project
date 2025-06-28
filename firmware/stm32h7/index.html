@@ -1033,8 +1033,8 @@
 
 
 
-<h1 id="firmware-for-stm32h7">Firmware for STM32H7<a class="headerlink" href="#firmware-for-stm32h7" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h1 id="firmware-for-stm32h7">Firmware for STM32H7</h1>
+<h2 id="overview">Overview</h2>
 <p>The STM32H7 firmware is responsible for:</p>
 <ul>
 <li>Sensor data acquisition and filtering</li>
@@ -1042,13 +1042,13 @@
 <li>Communication with AI coprocessor and wireless module</li>
 <li>Data logging on microSD card</li>
 </ul>
-<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
+<h2 id="architecture">Architecture</h2>
 <ul>
 <li><strong>Main Loop</strong>: Periodically reads sensors and updates motor commands.</li>
 <li><strong>Interrupts</strong>: Handle UART, SPI data reception.</li>
 <li><strong>Power Management</strong>: Coordinates with STM32L0 for low-power modes.</li>
 </ul>
-<h2 id="code-snippet-reading-imu-via-i2c">Code Snippet: Reading IMU via I2C<a class="headerlink" href="#code-snippet-reading-imu-via-i2c" title="Permanent link">&para;</a></h2>
+<h2 id="code-snippet-reading-imu-via-i2c">Code Snippet: Reading IMU via I2C</h2>
 <p>```c
 HAL_I2C_Mem_Read(&amp;hi2c1, MPU9250_ADDRESS, MPU9250_ACCEL_XOUT_H, I2C_MEMADD_SIZE_8BIT, buffer, 6, 100);</p>
 
@@ -1103,8 +1103,6 @@ HAL_I2C_Mem_Read(&amp;hi2c1, MPU9250_ADDRESS, MPU9250_ACCEL_XOUT_H, I2C_MEMADD_S
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
-      
-        <script src="https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js"></script>
       
     
   </body>
