@@ -9,7 +9,7 @@
 <link href="../../requirements/system/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
-<title>Architecture - Autonomous Submarine</title>
+<title>Architecture - Submarine Project</title>
 <link href="../../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#system-architecture-overview">
+<a class="md-skip" href="#system-architecture">
           Skip to content
         </a>
 </div>
@@ -29,7 +29,7 @@
 </div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Autonomous Submarine" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Autonomous Submarine">
+<a aria-label="Submarine Project" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Submarine Project">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -39,7 +39,7 @@
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
-            Autonomous Submarine
+            Submarine Project
           </span>
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
@@ -92,10 +92,10 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Autonomous Submarine" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Autonomous Submarine">
+<a aria-label="Submarine Project" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Submarine Project">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 </a>
-    Autonomous Submarine
+    Submarine Project
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -374,29 +374,26 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="system-architecture-overview">System Architecture Overview</h1>
-<p>This page gives a high-level overview of the autonomous submarine’s architecture, showing the main subsystems and how they interact.</p>
-<hr/>
 <h1 id="system-architecture">System Architecture</h1>
 <p>This diagram illustrates the main subsystems of the autonomous submarine.</p>
 <p>```mermaid
 graph TD
-  A[Main System Controller<br/>(STM32H7)] --&gt; B[Sensor Suite]
+  A[Main System Controller] --&gt; B[Sensor Suite]
   A --&gt; C[Motor Control System]
   A --&gt; D[Communication Module]
   A --&gt; E[Power Management System]
-  A --&gt; F[Data Storage<br/>(microSD)]
-  A --&gt; G[Backup Controller<br/>(STM32L0 / ATTiny)]</p>
+  A --&gt; F[Data Storage]
+  A --&gt; G[Backup Controller]</p>
 <p>B --&gt; B1[IMU]
   B --&gt; B2[Depth Sensor]
   B --&gt; B3[Temperature Sensors]
   B --&gt; B4[Leak Detector]
   B --&gt; B5[Battery Voltage/Current Sensor]</p>
-<p>C --&gt; C1[Thrusters (4–6)]
+<p>C --&gt; C1[Thrusters]
   C --&gt; C2[ESC / Motor Drivers]</p>
 <p>D --&gt; D1[Radio Module]
   D --&gt; D2[Debug USB]
-  D --&gt; D3[Optional GPS (Surfaced)]</p>
+  D --&gt; D3[Optional GPS]</p>
 <p>E --&gt; E1[Lithium Battery Pack]
   E --&gt; E2[Voltage Regulation]
   E --&gt; E3[Piezo Backup Unit]</p>
