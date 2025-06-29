@@ -20,7 +20,7 @@
     
     
       
-        <title>STM32H7 - Submarine Project</title>
+        <title>STM32H7 - Autonomous Submarine Docs</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Submarine Project" class="md-header__button md-logo" aria-label="Submarine Project" data-md-component="logo">
+    <a href="../.." title="Autonomous Submarine Docs" class="md-header__button md-logo" aria-label="Autonomous Submarine Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Submarine Project
+            Autonomous Submarine Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -176,13 +176,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Submarine Project" class="md-nav__button md-logo" aria-label="Submarine Project" data-md-component="logo">
+    <a href="../.." title="Autonomous Submarine Docs" class="md-nav__button md-logo" aria-label="Autonomous Submarine Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Submarine Project
+    Autonomous Submarine Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1033,8 +1033,8 @@
 
 
 
-<h1 id="firmware-for-stm32h7">Firmware for STM32H7</h1>
-<h2 id="overview">Overview</h2>
+<h1 id="firmware-for-stm32h7">Firmware for STM32H7<a class="headerlink" href="#firmware-for-stm32h7" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The STM32H7 firmware is responsible for:</p>
 <ul>
 <li>Sensor data acquisition and filtering</li>
@@ -1042,13 +1042,13 @@
 <li>Communication with AI coprocessor and wireless module</li>
 <li>Data logging on microSD card</li>
 </ul>
-<h2 id="architecture">Architecture</h2>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Main Loop</strong>: Periodically reads sensors and updates motor commands.</li>
 <li><strong>Interrupts</strong>: Handle UART, SPI data reception.</li>
 <li><strong>Power Management</strong>: Coordinates with STM32L0 for low-power modes.</li>
 </ul>
-<h2 id="code-snippet-reading-imu-via-i2c">Code Snippet: Reading IMU via I2C</h2>
+<h2 id="code-snippet-reading-imu-via-i2c">Code Snippet: Reading IMU via I2C<a class="headerlink" href="#code-snippet-reading-imu-via-i2c" title="Permanent link">&para;</a></h2>
 <p>```c
 HAL_I2C_Mem_Read(&amp;hi2c1, MPU9250_ADDRESS, MPU9250_ACCEL_XOUT_H, I2C_MEMADD_SIZE_8BIT, buffer, 6, 100);</p>
 
@@ -1099,7 +1099,7 @@ HAL_I2C_Mem_Read(&amp;hi2c1, MPU9250_ADDRESS, MPU9250_ACCEL_XOUT_H, I2C_MEMADD_S
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["mermaid"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
